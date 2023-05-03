@@ -1,3 +1,5 @@
+// Example: B01H6GUCCQ - Gaming Headset
+
 const express = require('express');
 const request = require('request-promise');
 
@@ -38,7 +40,7 @@ app.get('/products/:productId/reviews', async(req, res) => {
     }
 });
 
-// GET Product Offers
+// GET Product Offers 
 app.get('/products/:productId/offers', async(req, res) => {
     const { productId } = req.params;
     const { api_key } = req.query;
